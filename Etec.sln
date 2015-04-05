@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Etec", "Etec\Etec.fsproj", "{68669823-57AF-4F64-AA2B-D6AEE75F94FB}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Base", "Base\Base.fsproj", "{02E204B0-637E-48CA-B58B-FC2F9B589EE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{02E204B0-637E-48CA-B58B-FC2F9B589EE7}.Release|x86.ActiveCfg = Release|Any CPU
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Debug|x86.ActiveCfg = Debug|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Debug|x86.Build.0 = Debug|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Release|Any CPU.ActiveCfg = Release|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Release|x86.ActiveCfg = Release|x86
+		{68669823-57AF-4F64-AA2B-D6AEE75F94FB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-fsharp
+		$0.FSharpFormattingPolicy = $2
+		$2.DefaultFormat = $3
+		$3.IndentOnTryWith = False
+		$3.ReorderOpenDeclaration = False
+		$3.SpaceAfterComma = True
+		$3.SpaceAfterSemicolon = True
+		$3.SpaceAroundDelimiter = True
+		$3.SpaceBeforeArgument = True
+		$3.SpaceBeforeColon = True
+		$2.scope = text/x-fsharp
+		$0.TextStylePolicy = $4
+		$4.TabWidth = 2
+		$4.IndentWidth = 2
+		$4.inheritsSet = VisualStudio
+		$4.inheritsScope = text/plain
+		$4.scope = text/plain
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
