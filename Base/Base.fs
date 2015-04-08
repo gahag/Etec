@@ -10,12 +10,11 @@
 namespace Etec.Base
 
   open System
-  open System.Windows.Forms
 
   [<Interface>]
   type IEtecModule =
-    abstract member Name : String // Name of the module.
-    abstract member Form : Form   // Module form.
+    abstract member Name : String         // Name of the module.
+    abstract member Run  : (unit -> unit) // Module action.
 
   type Unit = Ω // Ohm
             | A // Ampere

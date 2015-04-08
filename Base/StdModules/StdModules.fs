@@ -7,6 +7,8 @@
  * of the BSD license. See the LICENSE file for details.
  *)
 
+#nowarn "0760"  // Forms dispose themselves, no need for explicit `new`.
+
 namespace Etec.StdModules
   
   open System.Windows.Forms
@@ -17,10 +19,10 @@ namespace Etec.StdModules
   type EqResistance() =
     interface IEtecModule with
       member this.Name = "Resistor Eq"
-      member this.Form = new EqResistanceFRM() :> Form
+      member this.Run  = EqResistanceFRM().Show // The action is just showing the form.
   
   [<Sealed>]
   type OhmLaw() =
     interface IEtecModule with
       member this.Name = "Ω Law"
-      member this.Form = new OhmLawFRM() :> Form
+      member this.Run  = OhmLawFRM().Show // The action is just showing the form.

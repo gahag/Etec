@@ -45,7 +45,7 @@ type public MainFRM(Modules : IEtecModule list) as form =
          btn.Text     <- Module.Name
          btn.Location <- Point(left i, top i)
          btn.Size     <- Size(ModuleBtnWidth, ModuleBtnHeight)
-         btn.Click.Add(ignore >> Module.Form.Show >> ignore)
+         btn.Click.Add(ignore >> Module.Run)
           
          form.Controls.Add(btn)
       

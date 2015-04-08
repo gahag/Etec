@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -17,29 +17,32 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <Tailcalls>false</Tailcalls>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Build\Base\bin\Debug\</OutputPath>
+    <IntermediateOutputPath>..\Build\Base\obj\Debug\</IntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\Base.XML</DocumentationFile>
+    <DocumentationFile>..\Build\Base\bin\Debug\Base.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <Tailcalls>true</Tailcalls>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\Build\Base\bin\Release\</OutputPath>
+    <IntermediateOutputPath>..\Build\Base\obj\Release\</IntermediateOutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\Base.XML</DocumentationFile>
+    <DocumentationFile>..\Build\Base\bin\Release\Base.XML</DocumentationFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <ItemGroup>
     <Compile Include="Base.fs" />
     <Compile Include="Formulas.fs" />
-    <Compile Include="GUI.fs" />
-    <Compile Include="EqResistanceFRM.fs" />
-    <Compile Include="OhmLawFRM.fs" />
-    <Compile Include="StdModules.fs" />
+    <Compile Include="GUI\NumericTextBox.fs" />
+    <Compile Include="GUI\UnitComboBox.fs" />
+    <Compile Include="StdModules\EqResistanceFRM.fs" />
+    <Compile Include="StdModules\OhmLawFRM.fs" />
+    <Compile Include="StdModules\StdModules.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -57,4 +60,8 @@
 	<Target Name="AfterBuild">
 	</Target>
 	-->
+  <ItemGroup>
+    <Folder Include="GUI\" />
+    <Folder Include="StdModules\" />
+  </ItemGroup>
 </Project>
