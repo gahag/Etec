@@ -11,8 +11,6 @@
 
 namespace Etec.StdModules
   
-  open System.Windows.Forms
-
   open Etec.Base
 
   [<Sealed>]

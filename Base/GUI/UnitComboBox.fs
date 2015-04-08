@@ -10,7 +10,6 @@
 namespace Etec.GUI
   
   open System
-  open System.Linq
   open System.Windows.Forms
 
   open Etec.Base

@@ -9,7 +9,6 @@
 
 namespace Etec.StdModules
 
-  open System
   open System.Drawing
   open System.Windows.Forms
 

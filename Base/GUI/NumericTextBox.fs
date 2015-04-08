@@ -13,9 +13,6 @@ namespace Etec.GUI
   open System.Linq
   open System.Windows.Forms
 
-  open Etec.Base
-  open Etec.Base.ModuleUtils
-
 
   type NumericTextBox() =
     inherit TextBox()
