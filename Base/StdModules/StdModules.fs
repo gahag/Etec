@@ -17,10 +17,10 @@ namespace Etec.StdModules
   type EqResistance() =
     interface IEtecModule with
       member this.Name = "Resistor Eq"
-      member this.Run  = EqResistanceFRM().Show // The action is just showing the form.
+      member this.Run  = EqResistanceFRM().Show() // The action is just showing the form.
   
   [<Sealed>]
   type OhmLaw() =
     interface IEtecModule with
       member this.Name = "Ω Law"
-      member this.Run  = OhmLawFRM().Show // The action is just showing the form.
+      member this.Run  = OhmLawFRM().Show() // The action is just showing the form.

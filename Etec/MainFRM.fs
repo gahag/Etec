@@ -44,7 +44,7 @@ namespace Etec
            btn.Text     <- Module.Name
            btn.Location <- Point(left i, top i)
            btn.Size     <- Size(ModuleBtnWidth, ModuleBtnHeight)
-           btn.Click.Add(ignore >> Module.Run)
+           btn.Click.Add(fun _ -> Module.Run) // Ignore the EventArgs.
             
            form.Controls.Add(btn)
         

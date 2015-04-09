@@ -13,8 +13,8 @@ namespace Etec.Base
 
   [<Interface>]
   type IEtecModule =
-    abstract member Name : String         // Name of the module.
-    abstract member Run  : (unit -> unit) // Module action.
+    abstract member Name : String // Name of the module.
+    abstract member Run  : unit   // Module action.
 
   type Unit = Ω // Ohm
             | A // Ampere
