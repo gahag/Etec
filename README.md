@@ -1,15 +1,15 @@
 # Etec
 
-Etec is a utility to manage formula calculation tools, fully compatible with the .NET assemblies.
+Etec is a utility to manage formula calculation tools, fully compatible with .NET assemblies.
 
 ## Usage
 
-Etec works out of the box, just place a module dll in the same directory as the Etec executable, and Etec will load it right on startup.
+Etec works out of the box, just place a module dll in the same directory of the Etec executable, and Etec will load it right on startup.
 
 
 ## Modules development
 
-The development of Etec modules is simple. It is only necessary to have a class that implements the [IEtecModule](Base/Base.fs) interface in a module's dll, and Etec will recognize and load it.
+The development of Etec modules is simple. It's only necessary to have a class that implements the [IEtecModule](Base/Base.fs) interface in a module's dll, and Etec will recognize and load it.
 There are also utilities such as formulas and common GUI components in Etec's base API that can be used by any module.
 
 ## License
